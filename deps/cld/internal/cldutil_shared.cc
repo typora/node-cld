@@ -74,7 +74,7 @@ static const int UTFmax = 4;        // Max number of bytes in a UTF-8 character
 
 // Design principles for these hash functions
 // - Few operations
-// - Handle 1-, 2-, and 3-byte UTF-8 scripts, ignoring intermixing except in
+// - Local 1-, 2-, and 3-byte UTF-8 scripts, ignoring intermixing except in
 //   Latin script expect 1- and 2-byte mixtures.
 // - Last byte of each character has about 5 bits of information
 // - Spread good bits around so they can interact in at least two ways
